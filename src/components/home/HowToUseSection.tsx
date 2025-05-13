@@ -1,7 +1,6 @@
-
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import Icon from '@/components/ui/icon';
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import Icon from "@/components/ui/icon";
 
 interface StepProps {
   number: number;
@@ -39,50 +38,49 @@ const HowToUseSection = () => {
               Как использовать Gift карту
             </h2>
             <p className="text-lg text-gray-500 mb-10">
-              Активация Gift карты — это просто. Следуйте нашим инструкциям и пользуйтесь всеми возможностями экосистемы Apple.
+              Активация Gift карты — это просто. Следуйте нашим инструкциям и
+              пользуйтесь всеми возможностями экосистемы Apple.
             </p>
-            
+
             <div className="space-y-12">
-              <Step 
-                number={1} 
-                icon="ShoppingCart" 
-                title="Приобретите Gift карту" 
-                description="Выберите номинал и оформите заказ на нашем сайте. После оплаты вы получите код на указанный email." 
+              <Step
+                number={1}
+                icon="ShoppingCart"
+                title="Приобретите Gift карту"
+                description="Выберите номинал и оформите заказ на нашем сайте. После оплаты вы получите код на указанный email."
               />
-              <Step 
-                number={2} 
-                icon="Smartphone" 
-                title="Откройте App Store" 
-                description="На вашем iPhone, iPad или Mac, зайдите в App Store и авторизуйтесь под своим Apple ID." 
+              <Step
+                number={2}
+                icon="Smartphone"
+                title="Откройте App Store"
+                description="На вашем iPhone, iPad или Mac, зайдите в App Store и авторизуйтесь под своим Apple ID."
               />
-              <Step 
-                number={3} 
-                icon="CreditCard" 
-                title="Активируйте карту" 
-                description="Нажмите на свой профиль, выберите 'Пополнить счёт' и введите полученный код Gift карты." 
+              <Step
+                number={3}
+                icon="CreditCard"
+                title="Активируйте карту"
+                description="Нажмите на свой профиль, выберите 'Пополнить счёт' и введите полученный код Gift карты."
               />
             </div>
-            
+
             <div className="mt-10">
-              <Button 
+              <Button
                 asChild
                 className="bg-[#0071E3] hover:bg-[#0077ED] rounded-full px-6"
               >
-                <Link to="/instructions">
-                  Подробная инструкция
-                </Link>
+                <Link to="/instructions">Подробная инструкция</Link>
               </Button>
             </div>
           </div>
-          
+
           <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-              alt="Использование Gift карты" 
+            <img
+              src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+              alt="Использование Gift карты"
               className="rounded-xl shadow-xl"
             />
-            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#F5F5F7] rounded-xl hidden lg:block"></div>
-            <div className="absolute -top-6 -right-6 w-16 h-16 bg-[#0071E3]/10 rounded-xl hidden lg:block"></div>
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#F5F5F7] rounded-xl z-[-1] hidden lg:block"></div>
+            <div className="absolute -top-6 -right-6 w-16 h-16 bg-[#0071E3]/10 rounded-xl z-[-1] hidden lg:block"></div>
           </div>
         </div>
       </div>
