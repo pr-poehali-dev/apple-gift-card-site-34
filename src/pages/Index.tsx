@@ -1,13 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Helmet } from 'react-helmet';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import HeroSection from '@/components/home/HeroSection';
+import CardsShowcase from '@/components/home/CardsShowcase';
+import FeaturesSection from '@/components/home/FeaturesSection';
+import HowToUseSection from '@/components/home/HowToUseSection';
+import CTASection from '@/components/home/CTASection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
+    <>
+      <Helmet>
+        <title>Apple Gift Cards | Официальный магазин</title>
+        <meta name="description" content="Приобретите Gift карты Apple разных номиналов. Идеальный подарок для любителей продукции Apple." />
+      </Helmet>
+      
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        
+        <main className="flex-grow">
+          <HeroSection />
+          <CardsShowcase />
+          <FeaturesSection />
+          <HowToUseSection />
+          <CTASection />
+        </main>
+        
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
